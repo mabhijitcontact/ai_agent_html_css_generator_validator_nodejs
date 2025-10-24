@@ -17,6 +17,15 @@ services:
       - "5001:5001"
     networks:
       - app-network
+  iteration-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.iteration-agent
+    depends_on:
+      - generator
+      - validator
+    networks:
+      - app-network
 networks:
   app-network:
     driver: bridge

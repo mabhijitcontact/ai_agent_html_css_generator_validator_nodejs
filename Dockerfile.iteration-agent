@@ -1,0 +1,7 @@
+FROM node:22-slim
+
+WORKDIR /app
+COPY iteration-agent.js .
+COPY package.json .
+RUN npm install
+CMD ["node", "iteration-agent.js"]
