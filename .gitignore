@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*.local
+
+# Build artifacts
+dist/
+build/
+
+# Logs
+npm-debug.log
+*.log
+logs/
+
+# macOS files
+.DS_Store
+
+# Test coverage reports
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+# Editor/IDE specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
